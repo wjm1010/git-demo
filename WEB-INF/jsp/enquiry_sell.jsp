@@ -1,0 +1,151 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
+%>
+<c:set var="ctx" value="${pageContext.request.contextPath}"/>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>人工交易-票据交易-询价卖出</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="${ctx}/css/iconfont/iconfont.css" rel="stylesheet">
+    <link href="${ctx}/css/reset.css" rel="stylesheet">
+    <link href="${ctx}/css/ArtificialTrading.css" rel="stylesheet">
+    <script src="${ctx}/js/jquery.js"></script>
+    <script src="${ctx}/js/main.js"></script>
+</head>
+<body>
+<div class="artificial-content clearfix">
+    <div class="main1">
+        <div class="Inquirysell">
+            <div class="clearfix">
+                <div class="Part-One" id="popup">
+                    <div class="asset font2">票据资产信息</div>
+                    <form action="" style="font-size:0px">
+                        <label for="" class="font2">产品类型：</label>
+                        <select name="" id="">
+                            <option value="" selected="selected"></option>
+                            <option value="">dssdg</option>
+                            <option value="">dssdg</option>
+                        </select>
+                        <label for="" class="font2">票据期限：</label>
+                        <select name="" id="">
+                            <option value="" selected="selected"></option>
+                            <option value="">1月</option>
+                            <option value="">2月</option>
+                            <option value="">3月</option>
+                            <option value="">4月</option>
+                            <option value="">5月</option>
+                            <option value="">6月</option>
+                        </select>
+                        <label for="" class="font2">票号：</label><input type="text" class="box1"
+                                                                      style="width:165px;    margin-right: 54px">
+                        <input type="submit" value="查询" class="font2" id="cx">
+                    </form>
+                </div>
+                <div class="Part-Two">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>选择</th>
+                            <th>票号</th>
+                            <th>票据类型</th>
+                            <th>票面金额(万)</th>
+                            <th>开票日期</th>
+                            <th>票源地址</th>
+                            <th>交易状态</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <input type="checkbox">
+                            </td>
+                            <td class="font3">A0001</td>
+                            <td class="font3">银承纸票</td>
+                            <td class="font3">1000</td>
+                            <td class="font3">2016-09-20</td>
+                            <td class="font3">30天</td>
+
+                            <td class="font3">待交易</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td class="font3">A0001</td>
+                            <td class="font3">银承纸票</td>
+                            <td class="font3">1000</td>
+                            <td class="font3">2016-09-20</td>
+                            <td class="font3">30天</td>
+                            <td class="font3">待交易</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td class="font3">A0001</td>
+                            <td class="font3">银承纸票</td>
+                            <td class="font3">1000</td>
+                            <td class="font3">2016-09-20</td>
+                            <td class="font3">30天</td>
+
+                            <td class="font3">待交易</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td class="font3">A0001</td>
+                            <td class="font3">银承纸票</td>
+                            <td class="font3">1000</td>
+                            <td class="font3">2016-09-20</td>
+                            <td class="font3">30天</td>
+
+                            <td class="font3">待交易</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td class="font3">A0001</td>
+                            <td class="font3">银承纸票</td>
+                            <td class="font3">1000</td>
+                            <td class="font3">2016-09-20</td>
+                            <td class="font3">30天</td>
+                            <td class="font3">待交易</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td class="font3">A0001</td>
+                            <td class="font3">银承纸票</td>
+                            <td class="font3">1000</td>
+                            <td class="font3">2016-09-20</td>
+                            <td class="font3">30天</td>
+                            <td class="font3">待交易</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="paging-area">
+                        <input type="button" value="上一页">
+                        <span class="page-now">当前第<span class="page-num">2</span>页</span>
+                        <span class="page-total">共<span class="page-num">10</span>页</span>
+                        <input type="button" value="下一页">
+                    </div>
+                </div>
+                <div class="Part-Three">
+                    <p class="trend"><span class="font2">利率走势图</span>　　<span class="font7">实时报价：2.40%</span></p>
+                    <div class="clearfix">
+                        <div class="fl chart font2"> sfasf</div>
+                        <div class="fl price">
+                            <p><label for="" class="font2">票面金额(万)：　</label><input type="text" class="box1"></p>
+                            <p><label for="" class="font2">　贴现率(%)：　</label><input type="text" class="box1"></p>
+                            <p class="submit"><input type="submit" value="提交"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

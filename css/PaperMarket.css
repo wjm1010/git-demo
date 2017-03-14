@@ -1,0 +1,144 @@
+body, html {
+	background: #050b0b;
+	width: 100%;
+	min-width: 1200px;
+}
+.buy-content {
+	width: 100%;
+}
+.buy-content .main1,.main2{
+	width: 100%;
+}
+.buy-content .sev-name li{
+	height: 97px;
+	text-align: center;
+	color: #bbb8b1;
+	margin: 2px 0;
+	font-size: 16px;
+	width: 36px;
+	padding: 0 10px;
+	background: #1d2c3e;
+}
+.buy-content .sev-name .act{
+	background: #1c4e89;
+}
+.buy-content .market {
+	height: 68px;
+	line-height: 68px;
+	padding-left: 15px;
+	border-bottom: 2px solid #272a27;
+}
+.buy-content .left-con {
+	width: 69.62%;
+	border-right: 2px solid #272a27;
+	border-left: 2px solid #272a27;
+}
+.buy-content .right-con {
+	width: 30.38%;
+	padding-top: 12px;
+}
+tbody tr:nth-child(odd) {
+  background: #202221;
+}
+.buy-content .Part-One {
+	border-bottom: 2px solid #272a27;
+	padding: 16px 0px 12px 15px;
+	border-top: 0;
+}
+.buy-content .Part-One i {
+	width: 20px;
+	border: 1px solid #424439;
+	margin: 4px 6px;
+	display: inline-block;
+	*
+	display: inline;
+	*
+	zoom: 1;
+}
+.buy-content .district{
+	position: relative;
+}
+.buy-content #show,.buy-content #show1{
+	font-size: 12px;
+}
+.buy-content .info{
+	width: 279px;
+	position: absolute;
+	left: -21px;
+	top: 30px;
+} 
+.buy-content .amount {
+	margin-right: 32px;
+	margin-left: 80px;
+}
+.buy-content .acceptor {
+	margin: 13px 0;
+}
+.buy-content .bill {
+	margin-bottom: 10px;
+}
+.buy-content .deadline {
+	margin-right: 8px;
+	margin-top: 20px;
+}
+
+
+.buy-content .Part-Two th {
+	color: #c9caa6;
+	font-size: 16px;
+	height: 55px;
+	text-align: center;
+	line-height: 55px;
+}
+.buy-content .Part-Two tr {
+	height: 40px;
+	text-align: center;
+}
+.buy-content .Part-Two .list1 {
+	background: #1a2d44;
+}
+.buy-content .Part-Two .list2 {
+	background: #202221
+}
+.buy-content .right-con .figure {
+	margin-top: 17px;
+	width: 100%;
+	margin-bottom: 22px;
+}
+.buy-content .right-con .figure img {
+	width: 100%;
+	padding-left: 10px;
+}
+.buy-content .it-information {
+	width: 100%;
+	border-top: 2px solid #272a27;
+	border-bottom: 2px solid #272a27;
+}
+.buy-content .it-information p span {
+	width: 25%;
+	line-height: 30px;
+	text-align: center;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+.buy-content .it1-information {
+	width: 100%;
+	padding-top: 16px;
+	padding-left: 14px;
+}
+.buy-content .it1-information p.quote{
+	margin-top: 24px;
+	margin-bottom: 21px;
+}
+.buy-content .it1-information p span.discount {
+	padding-left: 208px;
+	padding-right: 203px;
+}
+.buy-content .it1-information p span.rate {
+	margin: 23px 228px 0 175px;
+}
+.buy-content .it1-information p span.rate1 {
+	margin: 23px 116px 0 175px;
+}
+tbody tr:hover{background: #1a2d44}

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>卖方市场</title>
+<!-- <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css"> -->
+<link rel="stylesheet" href="../../css/iconfont/iconfont.css">
+<link rel="stylesheet" href="../../css/reset.css">
+<link rel="stylesheet" href="../../css/PaperMarket.css">
+<script type="text/javascript" src='../../js/jquery.js'></script>
+<script type="text/javascript" src='../../js/distpicker.data.js'></script>
+<script type="text/javascript" src='../../js/main.js'></script>
+</head>
+<body>
+<div class="buy-content">
+	<div class="main1 fl">
+        <div class="market font1">卖方市场</div>
+        <div class="clearfix">
+            <div class="left-con fl">
+                <div class="Part-One">
+                    <div class="clearfix producttype">
+                        <p class="fl font2 l"> 产品类型：</p>
+                        <div class="fl inbtn" style="font-size:0">
+                           <input type="button" value="银承纸票" class="button">
+                           <input type="button" value="银承电票" class="button">
+                           <input type="button" value="商承纸票" class="button">
+                        </div>
+                        <p class="fl amount font2">票据金额：<input type="text" class="box1"><i></i><input type="text" class="box1"></p>
+                        <p class="fl font2">询价方：<input type="text" class="box1"></p>
+                    </div>
+                    <div class="clearfix acceptor">
+                        <p class="fl font2 l"> 承兑人类型：</p>
+                        <div class="fl inbtn" style="font-size:0">
+                           <input type="button" value="政策银行" class="button">
+                           <input type="button" value="国有大行" class="button">
+                           <input type="button" value="股份制行" class="button">
+                           <input type="button" value="省级城商" class="button">
+                           <input type="button" value="省级农商" class="button">
+                           <input type="button" value="外资银行" class="button">
+                           <input type="button" value="地市城商" class="button">
+                           <input type="button" value="地市农商" class="button">
+                           <input type="button" value="村镇农信" class="button">
+                           <input type="button" value="财务公司" class="button">
+                        </div>
+                    </div>
+                    <div class="clearfix bill">
+                        <p class="fl font2 l"> 票据期限：</p>
+                        <div class="fl inbtn" style="font-size:0">
+                           <input type="button" value="一月份" class="button">
+                           <input type="button" value="二月份" class="button">
+                           <input type="button" value="三月份" class="button">
+                           <input type="button" value="四月份" class="button">
+                           <input type="button" value="五月份" class="button">
+                           <input type="button" value="六月份" class="button">
+                        </div>
+                        <p class="fl font2 l" style="margin-left:43px"> 票源地址：</p>
+                        <div class="box1 district" style="width:160px">
+                          <div id="show"></div>
+                          <div class="info" style="display:none">
+                            <div>
+                                <select id="s_province" class="ellipsis" name="s_province"></select>
+                                <select id="s_city" class="ellipsis" name="s_city"></select>
+                                <select id="s_county" class="ellipsis" name="s_county"></select>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <p class="fr font2 deadline"> 期限查询：<input type="text" class="box1" value="nn"></p>
+                    </div>
+                </div>
+                <div class="Part-Two">
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>产品编号</th>
+                            <th>询价方</th>
+                            <th>贴现率(%)</th>
+                            <th>金额(万)</th>
+                            <th>票据期限(天)</th>
+                            <th>涨跌幅(bp)</th>
+                            <th>承兑人</th>
+                            <th>票源地址</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="font3">11111</td>
+                            <td class="font3">中央企业</td>
+                            <td class="font4">3.61</td>
+                            <td class="font4">100000</td>
+                            <td class="font4">30</td>
+                            <td class="font4">+3</td>
+                            <td class="font3">股份制行</td>
+                            <td class="font3">深圳</td>
+                          </tr>
+                          <tr>
+                            <td class="font3">11111</td>
+                            <td class="font3">中央企业</td>
+                            <td class="font4">3.61</td>
+                            <td class="font4">100000</td>
+                            <td class="font4">30</td>
+                            <td class="font4">+3</td>
+                            <td class="font3">股份制行</td>
+                            <td class="font3">深圳</td>
+                          </tr>
+                          <tr>
+                            <td class="font3">11111</td>
+                            <td class="font3">中央企业</td>
+                            <td class="font5">3.61</td>
+                            <td class="font5">100000</td>
+                            <td class="font5">30</td>
+                            <td class="font5">+3</td>
+                            <td class="font3">股份制行</td>
+                            <td class="font3">深圳</td>
+                          </tr>
+                          <tr>
+                            <td class="font3">11111</td>
+                            <td class="font3">中央企业</td>
+                            <td class="font5">3.61</td>
+                            <td class="font5">100000</td>
+                            <td class="font5">30</td>
+                            <td class="font5">+3</td>
+                            <td class="font3">股份制行</td>
+                            <td class="font3">深圳</td>
+                          </tr>
+                          <tr>
+                            <td class="font3">11111</td>
+                            <td class="font3">中央企业</td>
+                            <td class="font5">3.61</td>
+                            <td class="font5">100000</td>
+                            <td class="font5">30</td>
+                            <td class="font5">+3</td>
+                            <td class="font3">股份制行</td>
+                            <td class="font3">深圳</td>
+                          </tr>
+                          <tr>
+                            <td class="font3">11111</td>
+                            <td class="font3">中央企业</td>
+                            <td class="font4">3.61</td>
+                            <td class="font4">100000</td>
+                            <td class="font4">30</td>
+                            <td class="font4">+3</td>
+                            <td class="font3">股份制行</td>
+                            <td class="font3">深圳</td>
+                          </tr>
+                          <tr>
+                            <td class="font3">11111</td>
+                            <td class="font3">中央企业</td>
+                            <td class="font4">3.61</td>
+                            <td class="font4">100000</td>
+                            <td class="font4">30</td>
+                            <td class="font4">+3</td>
+                            <td class="font3">股份制行</td>
+                            <td class="font3">深圳</td>
+                          </tr>
+
+                          <tr>
+                            <td class="font3">11111</td>
+                            <td class="font3">中央企业</td>
+                            <td class="font4">3.61</td>
+                            <td class="font4">100000</td>
+                            <td class="font4">30</td>
+                            <td class="font4">+3</td>
+                            <td class="font3">股份制行</td>
+                            <td class="font3">深圳</td>
+                          </tr>
+                          <tr>
+                            <td class="font3">11111</td>
+                            <td class="font3">中央企业</td>
+                            <td class="font4">3.61</td>
+                            <td class="font4">100000</td>
+                            <td class="font4">30</td>
+                            <td class="font4">+3</td>
+                            <td class="font3">股份制行</td>
+                            <td class="font3">深圳</td>
+                          </tr>
+
+                          <tr>
+                            <td class="font3">11111</td>
+                            <td class="font3">中央企业</td>
+                            <td class="font4">3.61</td>
+                            <td class="font4">100000</td>
+                            <td class="font4">30</td>
+                            <td class="font4">+3</td>
+                            <td class="font3">股份制行</td>
+                            <td class="font3">深圳</td>
+                          </tr>
+                          <tr>
+                            <td class="font3">11111</td>
+                            <td class="font3">中央企业</td>
+                            <td class="font4">3.61</td>
+                            <td class="font4">100000</td>
+                            <td class="font4">30</td>
+                            <td class="font4">+3</td>
+                            <td class="font3">股份制行</td>
+                            <td class="font3">深圳</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                    <div class="paging-area">
+                      <input type="button" value="上一页">
+                      <span class="page-now">当前第<span class="page-num">2</span>页</span>
+                      <span class="page-total">共<span class="page-num">10</span>页</span>
+                      <input type="button" value="下一页">
+                    </div>
+                </div>
+            </div>
+            <div class="right-con fr">
+                <div class="Chart clearfix">
+                    <p class="fl font2" style="margin-left:8px">走势图</p>
+                    <div class="inbtn fr" style="font-size:0">
+                        <input type="button" value="日线" class="button">
+                        <input type="button" value="周线" class="button">
+                        <input type="button" value="月线" class="button">
+                        <input type="button" value="年线" class="button">
+                    </div>
+                </div>
+                <div class="figure">
+                    <img src="../../images/pt.jpg" alt="">
+                </div>
+                <div class="it-information">
+                    <p><span class="font2">询价方</span><span class="font2">金额(万)</span><span class="font2">贴现率(%)</span><span class="font2">期限(天)</span></p>
+                    <p><span class="font2">XX公司</span><span class="font2">1000</span><span class="font2">3.61</span><span class="font2">30</span></p>
+                </div>
+                <div class="it1-information">
+                    <p><span class="font2 discount">贴现率</span><span class="font2 maker">报价方</span></p>
+                    <p class="quote"><span class="font2">报价1</span><span class="font7 rate">3.50</span><span class="font2">匿名</span></p>
+                    <p><span class="font2">报价2</span><span class="font7 rate1">3.61</span class="font2"><span class="font2">广州大观园有限公司</span></p>
+                </div>
+            </div>
+        </div>
+	</div>
+</div>
+<script type="text/javascript">
+    _init_area();
+    document.getElementById('show').innerHTML="请选择地区";
+    var showArea = function() {
+        document.getElementById('show').innerHTML = "<p>" + document.getElementById('s_province').value  +
+            document.getElementById('s_city').value  +
+            document.getElementById('s_county').value + "</p>"
+    }
+    document.getElementById('s_county').setAttribute('onchange', 'showArea()');
+
+
+    
+</script>
+</body>
+</html>

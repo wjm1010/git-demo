@@ -1,0 +1,221 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "微软雅黑";
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  text-decoration: none;
+}
+/**公共样式开始**/
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfl {
+  clear: both;
+}
+/**公共样式结束**/
+/**导航样式**/
+body {
+  background-color: #050b0b;
+  min-width: 1200px;
+}
+.land-area {
+  width: 500px;
+  height: 500px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -250px;
+  margin-top: -250px;
+}
+.land-area .logo {
+  margin: 0 auto;
+  margin-top: 10px;
+  height: 70px;
+  width: 130px;
+}
+.land-area .logo img {
+  height: 70px;
+  width: 130px;
+}
+.land-area ul {
+  margin: 0 auto;
+}
+.land-area ul li {
+  text-align: center;
+  margin-top: 20px;
+}
+.land-area ul li span {
+  display: inline-block;
+  color: #505050;
+  width: 70px;
+  text-align: right;
+}
+.land-area ul li input {
+  width: 200px;
+  height: 30px;
+  border: 1px solid #a5a5a5;
+  border-radius: 4px;
+}
+.land-area ul li .land-btn {
+  width: 300px;
+  margin-top: 10px;
+  background-color: #3279a3;
+  color: #fff;
+  height: 40px;
+  border-radius: 4px;
+}
+.land-area ul .checkbox-area {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.land-area ul .checkbox-area div {
+  display: inline;
+}
+.land-area ul .checkbox-area .protect {
+  float: right;
+}
+.land-area ul .checkbox-area input {
+  height: 15px;
+  width: 20px;
+}
+.land-area ul .checkbox-area span {
+  margin-right: 30px;
+}
+.land-area .land-turn {
+  text-align: center;
+}
+.land-area .land-turn input {
+  margin: 20px;
+  width: 80px;
+  height: 40px;
+  background-color: #3279a3;
+  border-radius: 4px;
+  color: #fff;
+}

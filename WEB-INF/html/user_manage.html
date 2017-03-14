@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../css/iconfont/iconfont.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <script src="../../js/user_manage.js"></script>
+</head>
+<body>
+    <!-- 主体内容开始 -->
+    <div class="main-left">
+    <div class="add-user-btn">
+        <span id="add-user">添加用户</span>
+    </div>
+        <table id="user-table">
+            <thead>
+                <tr>
+                    <th>姓名</th>
+                    <th>所属用户组</th>
+                    <th>手机号</th>
+                    <th>邮箱</th>
+                    <th>密码</th>
+                    <th>创建时间</th>
+                    <th>经办人</th>
+                    <th>审核人</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody id="user-table-body">
+                <tr>
+                    <td>admin</td>
+                    <td>交易审核</td>
+                    <td>13777778888</td>
+                    <td>452559656@qq.com</td>
+                    <td>a4598524</td>
+                    <td>2016/12/03</td>
+                    <td>张三三</td>
+                    <td>审核人</td>
+                    <td><input type="button" value="待审核" class="wait-audit"></td>
+                    <td> 
+                        <span class="model-10">
+                          <span class="checkbox">
+                             <input type="checkbox"/>
+                             <label></label>
+                         </span>
+                     </span>
+                     <span class="trash"><i class="iconfont icon-shanchu"></i></span>
+                 </td>
+             </tr>
+             <tr>
+                <td>admin</td>
+                <td>交易审核</td>
+                <td>13777778888</td>
+                <td>452559656@qq.com</td>
+                <td>a4598524</td>
+                <td>2016/12/03</td>
+                <td>张三三</td>
+                <td>审核人</td>
+                <td><input type="button" value="待审核" class="wait-audit"></td>
+                <td>
+                    <span class="model-10">
+                      <span class="checkbox">
+                         <input type="checkbox"/>
+                         <label></label>
+                     </span>
+                 </span>
+                 <span class="trash"><i class="iconfont icon-shanchu"></i></span>
+             </td>
+         </tr>
+         <tr>
+            <td>admin</td>
+            <td>交易审核</td>
+            <td>13777778888</td>
+            <td>452559656@qq.com</td>
+            <td>a4598524</td>
+            <td>2016/12/03</td>
+            <td>张三三</td>
+            <td>审核人</td>
+            <td><input type="button" value="未通过" class="unable-audit"></td>
+            <td>
+                <span class="model-10">
+                  <span class="checkbox">
+                     <input type="checkbox"/>
+                     <label></label>
+                 </span>
+             </span>
+             <span class="trash"><i class="iconfont icon-shanchu"></i></span>
+         </td>
+     </tr>
+     <tr>
+        <td>admin</td>
+        <td>交易审核</td>
+        <td>13777778888</td>
+        <td>452559656@qq.com</td>
+        <td>a4598524</td>
+        <td>2016/12/03</td>
+        <td>张三三</td>
+        <td>审核人</td>
+        <td><input type="button" value="已审核" class="pass-audit"></td>
+        <td>
+            <span class="model-10">
+              <span class="checkbox">
+                 <input type="checkbox"/>
+                 <label></label>
+             </span>
+         </span>
+         <span class="trash"><i class="iconfont icon-shanchu"></i></span>
+     </td>
+ </tr>
+ <tr>
+    <td>admin</td>
+    <td>交易审核</td>
+    <td>13777778888</td>
+    <td>452559656@qq.com</td>
+    <td>a4598524</td>
+    <td>2016/12/03</td>
+    <td>张三三</td>
+    <td>审核人</td>
+    <td><input type="button" value="已审核" class="pass-audit"></td>
+    <td>
+        <span class="model-10">
+          <span class="checkbox">
+             <input type="checkbox"/>
+             <label></label>
+         </span>
+     </span>
+     <span class="trash"><i class="iconfont icon-shanchu"></i></span>
+ </td>
+</tr>
+<tr>
+    <td>admin</td>
+    <td>交易审核</td>
+    <td>13777778888</td>
+    <td>452559656@qq.com</td>
+    <td>a4598524</td>
+    <td>2016/12/03</td>
+    <td>张三三</td>
+    <td>审核人</td>
+    <td><input type="button" value="已审核" class="pass-audit"></td>
+    <td>
+        <span class="model-10">
+          <span class="checkbox">
+             <input type="checkbox"/>
+             <label></label>
+         </span>
+     </span>
+     <span class="trash"><i class="iconfont icon-shanchu"></i></span>
+ </td>
+</tr>
+</tbody>
+</table>
+<div class="add-user-window" id="add-user-window">
+    <h3>添加用户</h3>
+    <form action="">
+        <ul>
+            <li>
+                <label for="">手机号：</label>
+                <input type="text" id="phone-num">
+            </li>
+            <li class="add-user-name">
+                <label for="">姓名：</label>
+                <input type="text" id="name">
+            </li>
+            <li>
+                <label for="">密码：</label>
+                <input type="text" id="code">
+            </li>
+            <li class="add-user-email">
+                <label for="">邮箱：</label>
+                <input type="text" id="email">
+            </li>
+            <li>
+                <label for="">所属用户组:</label>
+                <select name="" id="belong-group">
+                    <option value="发布经办">发布经办</option>
+                    <option value="交易审核">交易审核</option>
+                    <option value="发布经办">发布经办</option>
+                </select>
+            </li>
+            <li>
+                <label for="">组织架构:</label>
+                <select name="" id="belong-group">
+                    <option value="发布经办">example</option>
+                    <option value="交易审核">example</option>
+                    <option value="发布经办">example</option>
+                </select>
+            </li>
+            <li class="add-user-describe">
+                <label for="">描述：</label>
+                <textarea name="" id="" ></textarea>
+            </li>
+            <li class="add-user-btn">
+             <input type="button" value="取消" id="cancel">
+                <input type="button" value="确认" id="check">
+            </li>
+        </ul>
+    </form>
+</div>
+<div class="check-user-window" id="check-user-window">
+    <h3>审核用户</h3>
+    <form action="">
+        <ul>
+            <li>
+                <label for="">手机号：</label>
+                <input type="text">
+            </li>
+            <li class="check-user-name">
+                <label for="">姓名：</label>
+                <input type="text">
+            </li>
+            <li>
+                <label for="">密码：</label>
+                <input type="text">
+            </li>
+            <li class="check-user-email">
+                <label for="">邮箱：</label>
+                <input type="text">
+            </li>
+            <li>
+                <label for="">所属用户组:</label>
+                <select name="" id="">
+                    <option value="">发布经办</option>
+                    <option value="">交易审核</option>
+                    <option value="">发布经办</option>
+                </select>
+            </li>
+            <li class="check-user-describe">
+                <label for="">描述：</label>
+                <textarea name="" id="" ></textarea>
+            </li>
+            <li class="check-user-describe">
+                <label for="">审核人描述：</label>
+                <textarea name="" id="" ></textarea>
+            </li>
+            <li class="check-user-btn" id="check-user-btn">
+                <input type="button" value="审核不通过">
+                <input type="button" value="审核通过">
+            </li>
+        </ul>
+    </form>
+</div>
+</div>
+<div class="paging-area">
+    <input type="button" value="上一页">
+    <span class="page-now">当前第<span class="page-num">2</span>页</span>
+    <span class="page-total">共<span class="page-num">10</span>页</span>
+    <input type="button" value="下一页">
+  </div>
+<!-- 主体内容结束 -->
+</body>
+</html>

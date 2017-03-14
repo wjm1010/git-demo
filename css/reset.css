@@ -1,0 +1,56 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, pre, a, address, code, del, dfn, em, img, dl, dt, dd, ol, ul, li, tt, form, input, label, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; list-style-type: none; text-decoration: none; border: 0 none; outline: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.fl { float: left; }
+.fr { float: right; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+body, html { font-family: "Microsoft Yahei", "Vijaya"; }
+.font1 { font-size: 20px; color: #b9b2a7; }
+.font2 { color: #c9caa6; font-size: 16px; }
+.font3 { color: #4671a6; font-size: 14px; }
+.font4 { color: #265a2e; font-size: 14px; }
+.font5 { color: #952a2f; font-size: 14px; }
+.font7 { color: #e77405; font-size: 16px; }
+.button{ background: #192d43; margin: 0 1px; font-size: 14px; padding: 6px; border-top-left-radius: 2px; border-top-right-radius: 2px; color: #e2e0ba }
+.button1{ background: #68a5ef; color: #121d29; }
+.box1 { width: 68px; height: 25px; font-size: 14px; color: #fff; border: 1px solid #395c88; background: #1a2d44; display: inline-block; *
+	display: inline; *
+zoom: 1; text-align: center; line-height: 23px; cursor: pointer; }
+.sev-name { cursor: pointer; position: absolute; top: 70px; left: 0; }
+.l { margin-top: 2px; }
+.btnswitch { background: #68a5ef; color: #121d29; }
+.audit1 { border-top-left-radius: 2px; border-top-right-radius: 2px; padding: 6px; background: #952730; font-weight: normal; color: #fff; }
+.audit2 { border-top-left-radius: 2px; border-top-right-radius: 2px; padding: 6px; background: #ac661e; color: #0a0d14; font-weight: normal; }
+.audit3 { border-top-left-radius: 2px; border-top-right-radius: 2px; padding: 6px; background: #476ea0; color: #0a0d14; font-weight: normal; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; width: 100%; }
+
+
+/*补充表格按钮*/
+
+.paging-area{
+ text-align: center;
+ margin-top: 30px;
+padding-bottom: 30px;
+color:white;
+
+}
+.paging-area .page-now{
+	 color:white;
+}
+.page-total{
+	padding: 0 10px;
+}
+.paging-area input{
+width:110px;
+height:36px;
+background-color: #3179b1;
+border-radius: 3px;
+margin: 0 50px; 
+color:#ffffdc;
+}

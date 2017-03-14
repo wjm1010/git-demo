@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>人工交易-票据交易-交易中</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="../../css/iconfont/iconfont.css" rel="stylesheet">
+<link href="../../css/reset.css" rel="stylesheet">
+<link href="../../css/ArtificialTrading.css" rel="stylesheet">
+<script src="../../js/jquery.js"></script>
+<script src="../../js/distpicker.data.js"></script>
+<script src="../../js/main.js"></script>
+</head>
+<body>
+<div class="artificial-content">
+  <div class="main1">
+    <div class="InDialogueStore">
+          <div class="clearfix">
+              <div class="Part-One" id="popup">
+                  <form action="" style="font-size:0px">
+                      <div class="clearfix producttype">
+                          <p class="fl font2 l"> 产品类型：</p>
+                          <div class="fl inbtn">
+                             <input type="button" value="银承电票" class="button">
+                             <input type="button" value="商承纸票" class="button">
+                          </div>
+                         <div class="bill">
+                          <p class="fl font2 l"> 交易类型：</p>
+                          <div class="fl inbtn">
+                             <input type="button" value="询价买入" class="button">
+                             <input type="button" value="询价卖出" class="button">
+                             <input type="button" value="指定买入" class="button">
+                             <input type="button" value="指定卖出" class="button">
+                             <input type="button" value="报价买入" class="button">
+                             <input type="button" value="报价卖出" class="button">
+                             <input type="button" value="被指定买入" class="button">
+                             <input type="button" value="被指定卖出" class="button">
+                          </div>
+                      </div>
+                      </div>
+                  </form>
+              </div>
+              <div class="Part-Two">
+                  <table>
+                      <thead>
+                        <tr>
+                          <th>编号</th>
+                          <th>产品类型</th>
+                          <th>交易类型</th>
+                          <th>贴现率(%)</th>
+                          <th>票据期限(天)</th>
+                          <th>承兑人</th>
+                          <th>票源地址</th>
+                          <th>交易状态</th>
+                          <th>持票人</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="font3">1</td>
+                          <td class="font3">银承纸票</td>
+                          <td class="font3">询价买入</td>
+                          <td class="font3">3.5</td>
+                          <td class="font3">30</td>
+                          <td class="font3">股份制行</td>
+                          <td class="font3">北京</td>
+                          <td class="font3">待交易</td>
+                          <td class="font3">XXXXXX有限公司</td>
+                        </tr>
+                        <tr>
+                          <td class="font3">1</td>
+                          <td class="font3">银承纸票</td>
+                          <td class="font3">询价买入</td>
+                          <td class="font3">3.5</td>
+                          <td class="font3">30</td>
+                          <td class="font3">股份制行</td>
+                          <td class="font3">北京</td>
+                          <td class="font3">待交易</td>
+                          <td class="font3">XXXXXX有限公司</td>
+                        </tr>
+                        <tr>
+                          <td class="font3">1</td>
+                          <td class="font3">银承纸票</td>
+                          <td class="font3">询价买入</td>
+                          <td class="font3">3.5</td>
+                          <td class="font3">30</td>
+                          <td class="font3">股份制行</td>
+                          <td class="font3">北京</td>
+                          <td class="font3">待交易</td>
+                          <td class="font3">XXXXXX有限公司</td>
+                        </tr>
+                      </tbody>
+                  </table>
+                  <div class="paging-area">
+                    <input type="button" value="上一页">
+                    <span class="page-now">当前第<span class="page-num">2</span>页</span>
+                    <span class="page-total">共<span class="page-num">10</span>页</span>
+                    <input type="button" value="下一页">
+                  </div>
+              </div>
+          </div>
+          <!-- 弹窗 -->
+          <div class="InDial">
+              <div class="x">╳</div>
+              <div class="radiu">
+                  <ul class="clearfix">
+                      <li class="radiu1 fl"></li>
+                      <li class="radiu2 fl"></li>
+                      <li class="radiu3 fl"></li>
+                  </ul>
+              </div>
+              <div class="itcm">
+                  <span class="itcm1">已背书</span>
+                  <span class="itcm2">已签收</span>
+              </div>
+              <div class="danger">
+                  <span class="danger1">（或已撤回）</span>
+                  <span>（或已拒收）</span>
+              </div>
+              <div class="time">
+                  签收倒计时：<span>03:</span><span>00</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+</body>
+</html>

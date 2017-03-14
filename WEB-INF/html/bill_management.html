@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>人工交易-票据管理</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="../../css/iconfont/iconfont.css" rel="stylesheet">
+<link href="../../css/reset.css" rel="stylesheet">
+<link href="../../css/ArtificialTrading.css" rel="stylesheet">
+<script src="../../js/jquery.js"></script>
+<script src="../../js/distpicker.data.js"></script>
+<script src="../../js/main.js"></script>
+</head>
+<body>
+<div class="artificial-content">
+  <div class="main1">
+    <div class="bargainOffer">
+      <div class="clearfix">
+          <div class="Part-One">
+              <form action="" style="font-size:0px">
+                  <div class="clearfix producttype">
+                      <p class="fl font2 l"> 产品类型：</p>
+                      <div class="fl inbtn">
+                         <input type="button" value="银承纸票" class="button">
+                         <input type="button" value="银承电票" class="button">
+                         <input type="button" value="商承纸票" class="button">
+                      </div>
+                      <div class="acceptor">
+                          <p class="fl font2 l"> 承兑人类型：</p>
+                          <div class="fl inbtn">
+                             <input type="button" value="政策银行" class="button">
+                             <input type="button" value="国有大行" class="button">
+                             <input type="button" value="股份制行" class="button">
+                             <input type="button" value="省级城商" class="button">
+                             <input type="button" value="省级农商" class="button">
+                             <input type="button" value="外资银行" class="button">
+                             <input type="button" value="地市城商" class="button">
+                             <input type="button" value="地市农商" class="button">
+                             <input type="button" value="村镇农信" class="button">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="bill_condition clearfix">
+                    <p class="fl amount font2">
+                      票据金额：<input type="text" class="box1" style="width:78px;">
+                      <i></i>
+                      <input type="text" class="box1" style="width:78px;">
+                    </p>
+                    <div class="fl font2 l" style="margin:0 116px 0 69px"> 
+                      <label class="address">票源地址：</label>
+                      <div class="box1 district" style="width:160px">
+                        <div id="show"></div>
+                        <div class="info" style="display:none">
+                          <div>
+                              <select id="s_province" class="ellipsis" name="s_province"></select>
+                              <select id="s_city" class="ellipsis" name="s_city"></select>
+                              <select id="s_county" class="ellipsis" name="s_county"></select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <p><label for="" class="font2">期限查询：</label><input type="text" class="box1" value="nn" style="width:96px"></p>
+                  </div>
+                  <div class="clearfix bill inbtn" style="margin-top:15px;">
+                    <p class="fl font2 l"> 票据期限：</p>
+                    <input type="button" value="一月份" class="button">
+                    <input type="button" value="二月份" class="button">
+                    <input type="button" value="三月份" class="button">
+                    <input type="button" value="四月份" class="button">
+                    <input type="button" value="五月份" class="button">
+                    <input type="button" value="六月份" class="button">
+                  </div>
+                  <div class="publish clearfix">
+                    <input type="button" value="票据发布" class="fr font6" id="publish">
+                  </div>
+              </form>
+          </div>
+          <div class="Part-Two">
+              <table>
+                  <thead>
+                    <tr>
+                      <th>产品编号</th>
+                      <th>产品类型</th>
+                      <th>票面金额(万)</th>
+                      <th>票据期限(天)</th>
+                      <th>承兑人</th>
+                      <th>票源地址</th>
+                      <th>票据状态</th>
+                      <th>审核状态</th>
+                      <th>操作</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+  
+                    <tr>
+                      <td class="font3">001</td>
+                      <td class="font3">银承纸票</td>
+                      <td class="font5">1000</td>
+                      <td class="font5">30</td>
+                      <td class="font5">股份制行</td>
+                      <td class="font3">北京</td>
+                      <td class="font3">待交易</td>
+                      <td class="font3"><b class="audit3">已通过</b></td>
+                      <td><i class="iconfont">&#xe69e;</i><i class="iconfont delete">&#xe6d3;</i></td>
+                    </tr>
+                    <tr>
+                      <td class="font3">001</td>
+                      <td class="font3">银承纸票</td>
+                      <td class="font5">1000</td>
+                      <td class="font5">30</td>
+                      <td class="font5">股份制行</td>
+                      <td class="font3">北京</td>
+                      <td class="font3">待交易</td>
+                      <td class="font3"><b class="audit1">待审核</b></td>
+                      <td><i class="iconfont">&#xe69e;</i><i class="iconfont delete">&#xe6d3;</i></td>
+                    </tr>
+                    <tr>
+                      <td class="font3">001</td>
+                      <td class="font3">银承纸票</td>
+                      <td class="font5">1000</td>
+                      <td class="font5">30</td>
+                      <td class="font5">股份制行</td>
+                      <td class="font3">北京</td>
+                      <td class="font3">待交易</td>
+                      <td class="font3"><b class="audit1">待审核</b></td>
+                      <td><i class="iconfont">&#xe69e;</i><i class="iconfont delete">&#xe6d3;</i></td>
+                    </tr>
+                    <tr>
+                      <td class="font3">001</td>
+                      <td class="font3">银承纸票</td>
+                      <td class="font4">1000</td>
+                      <td class="font4">30</td>
+                      <td class="font4">股份制行</td>
+                      <td class="font3">北京</td>
+                      <td class="font3">待交易</td>
+                      <td class="font3"><b class="audit1">待审核</b></td>
+                      <td><i class="iconfont">&#xe69e;</i><i class="iconfont delete">&#xe6d3;</i></td>
+                    </tr>
+                    <tr>
+                      <td class="font3">001</td>
+                      <td class="font3">银承纸票</td>
+                      <td class="font4">1000</td>
+                      <td class="font4">30</td>
+                      <td class="font4">股份制行</td>
+                      <td class="font3">北京</td>
+                      <td class="font3">待交易</td>
+                      <td class="font3"><b class="audit1">待审核</b></td>
+                      <td><i class="iconfont">&#xe69e;</i><i class="iconfont delete">&#xe6d3;</i></td>
+                    </tr>
+                    <tr>
+                      <td class="font3">001</td>
+                      <td class="font3">银承纸票</td>
+                      <td class="font4">1000</td>
+                      <td class="font4">30</td>
+                      <td class="font4">股份制行</td>
+                      <td class="font3">北京</td>
+                      <td class="font3">待交易</td>
+                      <td class="font3"><b class="audit2">未通过</b></td>
+                      <td><i class="iconfont">&#xe69e;</i><i class="iconfont delete">&#xe6d3;</i></td>
+                    </tr>
+                    <tr>
+                      <td class="font3">001</td>
+                      <td class="font3">银承纸票</td>
+                      <td class="font4">1000</td>
+                      <td class="font4">30</td>
+                      <td class="font4">股份制行</td>
+                      <td class="font3">北京</td>
+                      <td class="font3">待交易</td>
+                      <td class="font3"><b class="audit2">未通过</b></td>
+                      <td><i class="iconfont">&#xe69e;</i><i class="iconfont delete">&#xe6d3;</i></td>
+                    </tr>
+                    <tr>
+                      <td class="font3">001</td>
+                      <td class="font3">银承纸票</td>
+                      <td class="font4">1000</td>
+                      <td class="font4">30</td>
+                      <td class="font4">股份制行</td>
+                      <td class="font3">北京</td>
+                      <td class="font3">待交易</td>
+                      <td class="font3"><b class="audit3">已通过</b></td>
+                      <td><i class="iconfont">&#xe69e;</i><i class="iconfont delete">&#xe6d3;</i></td>
+                    </tr>
+                    <tr>
+                      <td class="font3">001</td>
+                      <td class="font3">银承纸票</td>
+                      <td class="font4">1000</td>
+                      <td class="font4">30</td>
+                      <td class="font4">股份制行</td>
+                      <td class="font3">北京</td>
+                      <td class="font3">待交易</td>
+                      <td class="font3"><b class="audit1">待审核</b></td>
+                      <td><i class="iconfont">&#xe69e;</i><i class="iconfont delete">&#xe6d3;</i></td>
+                    </tr>
+                  </tbody>
+              </table>
+              <div class="paging-area">
+                <input type="button" value="上一页">
+                <span class="page-now">当前第<span class="page-num">2</span>页</span>
+                <span class="page-total">共<span class="page-num">10</span>页</span>
+                <input type="button" value="下一页">
+              </div>
+          </div>
+          <div class="Part-Three product_details">
+            <ul class="clearfix">
+              <li class="fl">产品编号：<span>001</span></li>
+              <li class="fl">票号：<span>03280016</span></li>
+              <li class="fl">票面金额(万)：<span>1000</span></li>
+              <li class="fl">承兑人：<span>招商银行</span></li>
+              <li class="fl">票源地址：<span>重庆</span></li>
+            </ul>
+            <ul class="clearfix">
+              <li class="fl">出票日期：<span>2016-11-15</span></li>
+              <li class="fl">承兑日期：<span>2017-02-15</span></li>
+              <li class="fl">持票人：<span>×××公司</span></li>
+              <li class="fl"><input type="button" value="查看影像" id="image"></li>
+            </ul>
+          </div>
+      </div>
+
+      <!-- 票据发布弹窗 -->
+      <div class="pub clearfix">
+        <p class="back fr">&times;</p>
+        <p class="lish">发布票据</p>
+        <p>
+          <input type="button" value="银承纸票" id="paper_tickets">
+          <input type="button" value="银承电票" id="tele_tickets">
+          <input type="button" value="商承电票" id="tele_tickets1">
+        </p>
+      </div>
+      <!-- 银承纸票部分 -->
+      <div class="paper_tickets">
+        <form action="">
+          <p class="back">&times;</p>
+          <p class="title">产品类型：银承纸票</p>
+          <div class="content clearfix">
+            <p class="list">
+              
+                <label>票据正面：</label>
+                <input type="text" value="选择文件" class="choose">
+                <input type="file" id="choose">
+              
+              
+                <label class="side">票据背面：</label>
+                <input type="text" value="选择文件" class="choose">
+                <input type="file" id="choose1">
+             
+            </p>
+            <ul class="fl">
+          
+              <li>
+                <label>票号：</label>
+                <input type="text">
+              </li>
+              <li>
+                <label>承兑人：</label>
+                <input type="text">
+              </li>
+              <li>
+                <label>出票日期：</label>
+                <input type="date">
+              </li>
+              <li>
+                <label>票源地址：</label>
+                <input type="text">
+              </li>
+              <li>
+                <label>联系电话：</label>
+                <input type="number">
+              </li>
+            </ul>
+            <ul class="fl">
+             
+              <li>
+                <label>持票人：</label>
+                <input type="text">
+              </li>
+              <li>
+                <label>票面金额：</label>
+                <input type="text">
+              </li>
+              <li>
+                <label>到期日期：</label>
+                <input type="date">
+              </li>
+              <li>
+                <label>联系人：</label>
+                <input type="text">
+              </li>
+            </ul>
+          </div>
+          <p class="remark">
+            <label for="">备注：</label><textarea></textarea>
+          </p>
+          <p class="submit">
+            <input type="submit" value="提交">
+          </p>
+        </form>
+      </div>
+      <!-- 银承电票部分 -->
+      <div class="tele_tickets">
+        <form action="">
+          <p class="back">&times;</p>
+          <p class="title">产品类型：银承电票</p>
+          <div class="content clearfix">
+            <p class="list">
+              
+                <label>票据正面：</label>
+                <input type="text" value="选择文件" class="choose">
+                <input type="file" id="choose">
+              
+              
+                <label class="side">票据背面：</label>
+                <input type="text" value="选择文件" class="choose">
+                <input type="file" id="choose1">
+             
+            </p>
+            <ul class="fl">
+          
+              <li>
+                <label>票号：</label>
+                <input type="text">
+              </li>
+              <li>
+                <label>承兑人：</label>
+                <input type="text">
+              </li>
+              <li>
+                <label>出票日期：</label>
+                <input type="date">
+              </li>
+              <li>
+                <label>票源地址：</label>
+                <input type="text">
+              </li>
+              <li>
+                <label>联系电话：</label>
+                <input type="number">
+              </li>
+            </ul>
+            <ul class="fl">
+             
+              <li>
+                <label>持票人：</label>
+                <input type="text">
+              </li>
+              <li>
+                <label>票面金额：</label>
+                <input type="text">
+              </li>
+              <li>
+                <label>到期日期：</label>
+                <input type="date">
+              </li>
+              <li>
+                <label>联系人：</label>
+                <input type="text">
+              </li>
+            </ul>
+          </div>
+          <p class="remark">
+            <label for="">备注：</label><textarea></textarea>
+          </p>
+          <p class="submit">
+            <input type="submit" value="提交">
+          </p>
+        </form>
+      </div>
+      <!-- 商承电票部分 -->
+      <div class="tele_tickets1">
+        <form action="">
+          <p class="back">&times;</p>
+          <p class="title">产品类型：商承电票</p>
+          <div class="content clearfix">
+            <p class="list">
+              
+                <label>票据正面：</label>
+                <input type="text" value="选择文件" class="choose">
+                <input type="file" id="choose">
+              
+              
+                <label class="side">票据背面：</label>
+                <input type="text" value="选择文件" class="choose">
+                <input type="file" id="choose1">
+             
+            </p>
+            <ul class="fl">
+          
+              <li>
+                <label>票号：</label>
+                <input type="text">
+              </li>
+              <li>
+                <label>承兑人：</label>
+                <input type="text">
+              </li>
+              <li>
+                <label>出票日期：</label>
+                <input type="date">
+              </li>
+              <li>
+                <label>票源地址：</label>
+                <input type="text">
+              </li>
+              <li>
+                <label>联系电话：</label>
+                <input type="number">
+              </li>
+            </ul>
+            <ul class="fl">
+             
+              <li>
+                <label>持票人：</label>
+                <input type="text">
+              </li>
+              <li>
+                <label>票面金额：</label>
+                <input type="text">
+              </li>
+              <li>
+                <label>到期日期：</label>
+                <input type="date">
+              </li>
+              <li>
+                <label>联系人：</label>
+                <input type="text">
+              </li>
+            </ul>
+          </div>
+          <p class="remark">
+            <label for="">备注：</label><textarea></textarea>
+          </p>
+          <p class="submit">
+            <input type="submit" value="提交">
+          </p>
+        </form>
+      </div>
+      <!-- 删除 -->
+      <!-- <div id="delate">
+        <p class="back">&times;</p>
+        <p class="font2">经办人操作：<span class="font7">删除</span></p>
+        <p class="remark">
+          <label for="" class="font2">描述：</label><textarea></textarea>
+        </p>
+        <p class="verify">
+          <input type="button" value="审核不通过">
+          <input type="button" value="审核通过">
+        </p>
+        <p class="font2">注：经办人操作有修改，发布，删除，成交</p>
+      </div> -->
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+    _init_area();
+    document.getElementById('show').innerHTML="请选择地区";
+    var showArea = function() {
+        document.getElementById('show').innerHTML = "<p>" + document.getElementById('s_province').value  +
+            document.getElementById('s_city').value  +
+            document.getElementById('s_county').value + "</p>"
+    }
+    document.getElementById('s_county').setAttribute('onchange', 'showArea()');
+</script>
+</body>
+</html>

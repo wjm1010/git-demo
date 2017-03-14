@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>人工交易-资金管理</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="../../css/iconfont/iconfont.css" rel="stylesheet">
+<link href="../../css/reset.css" rel="stylesheet">
+<link href="../../css/ArtificialTrading.css" rel="stylesheet">
+<script src="../../js/jquery.js"></script>
+<script src="../../js/distpicker.data.js"></script>
+<script src="../../js/main.js"></script>
+<style>
+.veto{
+	display: none;
+}
+.agree{
+	display: none;
+}
+.bankcard input{
+	width: 300px;
+    height: 80px;
+    background: #fff;
+    text-align: center;
+    line-height: 80px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -40px;
+    color: red;
+    font-size: 28px;
+    cursor: pointer;
+}
+.material{
+	background: #fff;
+	width: 800px;
+	margin:100px auto;
+    padding: 60px 9px 9px 9px;
+    border: 1px solid #E6E6E6;
+}
+.material ul{
+	margin-left:250px;
+}
+.material ul li{
+	margin-bottom: 20px;
+    line-height: 16px;
+    color: #4c4c4c;
+    font-size: 14px;
+}
+.material ul li.card{
+	font-size: 12px;
+    margin-top: -17px;
+    margin-left: 75px;
+    margin-bottom:30px;
+    color: #999999
+}
+.material ul li.card a{
+	color: #4f88cc;
+	cursor: pointer;
+}
+.material ul li label{
+	margin-right: 20px;
+}
+.material ul li input{
+	width: 200px;
+    height: 30px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+}
+#materinfor{
+	background: #e5f5ff;
+    line-height: 35px;
+    font-size: 16px;
+    margin-bottom: 50px;
+    padding-left: 30px;
+}
+.material #login{
+	text-align: center;
+}
+.material #login input{
+   line-height: 40px;
+    height: 40px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    width: 130px;
+    background: #f4a21d;
+    border-radius: 4px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+</style>
+</head>
+<body>
+    <div class="brm">
+    	<!-- <div class="bankcard">
+    		<input type="button" value="＋ 绑定银行卡" id="bankcardbtn">
+    	</div> -->
+    	<div class="material" id="material">
+			<p id="materinfor">请正确填写以下信息</p>
+			<ul>
+				<li><label for="">真实姓名</label><input type="text"></li>
+				<li><label for="">身份证号</label><input type="text"></li>
+				<li><label for="">银行卡号</label><input type="text"></li>
+				<li class="card">输入卡号后会智能识别银行和卡种，<a>银行卡要求</a></li>
+				<li><label for="">手机号码</label><input type="text"></li>
+				<li class="card">请填写您在银行预留的手机号码，以验证银行卡是否属于您本人</li>
+			</ul>
+			<p id="login"><input type="button" value="同意协议并确定"></p>
+    	</div>
+    <!-- 	<div class="brm-title">
+    		银行资金账户信息
+    	</div>
+    	<div class="brm-content">
+
+	    	<div class="clearfix">
+	    		<ul class="fl">
+		    		<li>企业名称：<span>广州腾飞信息技术有限公司</span></li>
+		    		<li>企业类型：<span>股份制企业</span></li>
+		    		<li>企业账户开户行：<span>中国公司银行</span></li>
+		    		<li>
+		    			<span class="distance">您的中国银联备付账户余额：<span class="price">2000</span>（万） RMB</span>
+		    			<input type="button" value="资金划入">
+		    			<input type="button" value="资金划出">
+		    			<input type="button" value="资金明细">
+		    		</li>
+		    		<li>资金状态：<span class="price">划出1,000万, 待审核</span></li>
+		    	</ul>
+		    	<ul class="fl list">
+		    		<li>企业法人代表：<span>张三</span></li>
+		    		<li>账户账号：<span>1111111111111111</span></li>
+		    		<li>企业账户开户行号：<span>1111111111111111</span></li>
+		    	</ul>
+	    	</div>
+
+	    	<div class="audit">
+	    		<p>
+	    			<input type="button" value="审核不通过" id="NOPASS">
+	    			<input type="button" value="审核通过" id="PASS">
+	    		</p>
+	    	</div> -->
+
+
+	    	<!-- 审核不通过弹框 -->
+	    	<!-- <div class="veto" id="veto">
+	    		<p class="close" id="close">╳</p>
+	    		<p>描述：<textarea></textarea></p>
+	    		<p><input type="button" value="确定"></p>
+	    	</div> -->
+	    	<!-- 审核通过弹框 -->
+	    	<!-- <div class="agree" id="agree">
+	    		<p>再次确认</p>
+	    		<p>是否确认审核通过</p>
+	    		<p>
+	    			<input type="button" value="取消" id="abolish">
+	    			<input type="button" value="确定" id="determine">
+	    		</p>
+	    	</div> -->
+    	<!-- </div> -->
+    </div>
+    <script>
+    	$(function () {
+    		// $("#bankcardbtn").click(function() {
+    		// 	$("#material").show();
+    		// 	$(this).hide();
+    		// });
+    	})
+    	//审核弹窗 
+		// var NOPASS=document.getElementById("NOPASS");
+		// var PASS=document.getElementById("PASS");
+		// var veto=document.getElementById("veto");
+		// var close=document.getElementById("close");
+		// var agree=document.getElementById("agree");
+		// var abolish=document.getElementById("abolish");
+		// var determine=document.getElementById("determine");
+		// veto.style.cursor="pointer";
+		// abolish.style.cursor="pointer";
+		// determine.style.cursor="pointer";
+		// NOPASS.onclick=function(){
+		// 	veto.style.display="block";
+		// }
+		// close.onclick=function(){
+		// 	veto.style.display="none";
+		// }
+		// PASS.onclick=function(){
+		// 	agree.style.display="block";
+		// }
+		// abolish.onclick=function(){
+		// 	agree.style.display="none";
+		// }
+		// determine.onclick=function(){
+		// 	agree.style.display="none";
+		// }
+
+    </script>
+</body>
+</html>

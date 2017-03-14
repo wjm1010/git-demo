@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="../../css/iconfont/iconfont.css">
+  <link rel="stylesheet" href="../../css/index.css">
+    <style>
+       .user-group-limit{
+           max-width: 100px;
+           white-space: nowrap;
+           text-overflow: ellipsis;
+           overflow: hidden;
+       }
+    </style>
+</head>
+<body>
+  <!-- 主体内容开始 -->
+  <div class="user-group-manage" id="user-group-manage">
+   <div class="add-user-btn">
+    <span id="add-user-group">添加用户组</span>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>用户名组名</th>
+        <th>用户组描述</th>
+        <th>用户组权限</th>
+        <th>创建时间</th>
+        <th>经办人</th>
+        <th>审核人</th>
+        <th>状态</th>
+        <th>操作</th>
+      </tr>
+    </thead>
+    <tbody id="table-show">
+      <tr>
+        <td class="table-describe">交易审核</td>
+        <td class="table-describe">wsdfsdagffffffffffffffsdfsdfsdfsdvgdfgdfhgfshnfsgbfffffffffffffsdfsdfsdfsdvgdfgdfhgfshnfsgbdsfbgdfgdfg</td>
+        <td class="user-group-limit">竞价买入审核</td>
+        <td>2016/12/03</td>
+        <td>张三三</td>
+        <td>审核人</td>
+        <td><input type="button" value="待审核" class="wait-audit"></td>
+        <td> 
+         <span class="modify"><i class="iconfont icon-bianji"></i></span>
+         <span class="trash"><i class="iconfont icon-shanchu"></i></span>
+       </td>
+     </tr>
+     <tr>
+      <td class="table-describe">交易审核</td>
+      <td class="table-describe">负责竞价买入审核、竞价卖出审核竞价卖出审核竞价卖出审核竞价卖出审核</td>
+      <td class="user-group-limit">竞价买入审核竞价买入审核竞价买入审核竞价买入审核</td>
+      <td>2016/12/03</td>
+      <td>张三三</td>
+      <td>审核人</td>
+      <td><input type="button" value="待审核" class="wait-audit"></td>
+      <td> 
+       <span class="modify"><i class="iconfont icon-bianji"></i></span>
+       <span class="trash"><i class="iconfont icon-shanchu"></i></span>
+     </td>
+   </tr>
+    <tr>
+      <td class="table-describe">交易审核</td>
+      <td class="table-describe">负责竞价买入审核、竞价卖出审核竞价卖出审核竞价卖出审核竞价卖出审核</td>
+      <td class="user-group-limit">竞价买入审核竞价买入审核竞价买入审核竞价买入审核</td>
+      <td>2016/12/03</td>
+      <td>张三三</td>
+      <td>审核人</td>
+      <td><input type="button" value="待审核" class="wait-audit"></td>
+      <td> 
+       <span class="modify"><i class="iconfont icon-bianji"></i></span>
+       <span class="trash"><i class="iconfont icon-shanchu"></i></span>
+     </td>
+   </tr>
+    <tr>
+      <td class="table-describe">交易审核</td>
+      <td class="table-describe">负责竞价买入审核、竞价卖出审核竞价卖出审核竞价卖出审核竞价卖出审核</td>
+      <td class="user-group-limit">竞价买入审核竞价买入审核竞价买入审核竞价买入审核</td>
+      <td>2016/12/03</td>
+      <td>张三三</td>
+      <td>审核人</td>
+      <td><input type="button" value="待审核" class="wait-audit"></td>
+      <td> 
+       <span class="modify"><i class="iconfont icon-bianji"></i></span>
+       <span class="trash"><i class="iconfont icon-shanchu"></i></span>
+     </td>
+   </tr>
+    <tr>
+      <td class="table-describe">交易审核</td>
+      <td class="table-describe">负责竞价买入审核、竞价卖出审核竞价卖出审核竞价卖出审核竞价卖出审核</td>
+      <td class="user-group-limit">竞价买入审核竞价买入审核竞价买入审核竞价买入审核</td>
+      <td>2016/12/03</td>
+      <td>张三三</td>
+      <td>审核人</td>
+      <td><input type="button" value="待审核" class="wait-audit"></td>
+      <td> 
+       <span class="modify"><i class="iconfont icon-bianji"></i></span>
+       <span class="trash"><i class="iconfont icon-shanchu"></i></span>
+     </td>
+   </tr>
+ </tbody>
+</table>
+      <div class="check-user-window" id="check-user-window" style="top:30%;">
+          <h3>审核用户组</h3>
+          <form action="">
+              <ul>
+                  <li>
+                      <label for="">用户组名：</label>
+                      <input type="text" id="user-group-name">
+                  </li>
+                  <li>
+                      <label for="">用户组描述：</label>
+                      <textarea name="" id="user-group-describe" cols="30" rows="10"></textarea>
+                  </li>
+                  <li>
+                      <label for="">用户组权限：</label>
+                      <textarea name="" id="user-group-limits" cols="30" rows="10"></textarea>
+                  </li>
+                  <li >
+                      <label for="">创建时间：</label>
+                      <input type="text" id="creat-time">
+                  </li>
+                  <li class="check-user-btn" id="check-user-btn">
+                      <input type="button" value="审核不通过">
+                      <input type="button" value="审核通过">
+                  </li>
+              </ul>
+          </form>
+      </div>
+
+      <div class="paging-area">
+  <input type="button" value="上一页">
+  <span class="page-now">当前第<span class="page-num">2</span>页</span>
+  <span class="page-total">共<span class="page-num">10</span>页</span>
+  <input type="button" value="下一页">
+</div>
+</div>
+<!-- 主体内容结束 -->
+<!-- 选项主体内容开始 -->
+<div class="main-left choose-area" id="choose-area">
+  <!--添加用户组头部开始-->
+  <div class="add-group-title">
+    <h2>添加用户组</h2>
+    <div class="checkbtn fr">
+      <input type="button" value="取消" id="cancel">
+      <input type="button" value="确定">
+    </div>
+  </div>
+  <!--添加用户组头部结束-->
+  <div class="product-class ">
+    <div class="fl">
+      <label for="">交易产品类别：</label>
+      <select class="select"  name="" id="">
+        <option value="">票据</option>
+        <option value="">证券</option>
+        <option value="">股票</option>
+        <option value="">现金</option>
+      </select>
+    </div>
+    <div class="user-name">
+      <label for="">用户组名称：</label>
+      <input type="text">
+    </div>
+  </div>
+  <!--选项区域开始-->
+  <div class="agent-person">
+    <div class="agent-person-content">
+      <dl>
+        <dt><input type="checkbox" name="checkbox" value="checkbox" /><label>发布票据</label></dt>
+        <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>票据影像上传</label></dd>
+        <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>票据信息编辑</label></dd>
+        <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>票据信息删除</label></dd>
+      </dl>
+      <dl >
+        <dt><input type="checkbox" name="checkbox" value="checkbox" /><label>发布询价</label></dt>
+        <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>发布询价卖出信息</label></dd>
+        <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>修改询价卖出信息</label></dd>
+        <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>删除询价卖出信息</label></dd>
+        <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>发布询价买入信息（银行可导入授信名单、授信额度）</label></dd>
+        <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>修改询价买入信息</label></dd>
+        <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>删除询价买入信息</label></dd>
+      </dl>
+      <dl>
+        <dt><input type="checkbox" name="checkbox" value="checkbox" /><label>发布报价</label></dt>
+        <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>发布报价买入信息（录入利率）</label></dd>
+        <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>修改询价卖出信息</label></dd>
+        <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>删除询价卖出信息</label></dd>
+        <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>发布询价买入信息</label></dd>
+        <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>修改询价买入信息</label></dd>
+        <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>删除询价买入信息</label></dd>
+      </dl>
+      <dl>
+        <dt><input type="checkbox" name="checkbox" value="checkbox" /><label>成交确认</label></dt>
+        <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>选择报价</label></dd>
+        <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>成交确认</label></dd>
+      </dl>
+      <dl>
+        <dt><input type="checkbox" name="checkbox" value="checkbox" /><label>资金管理</label></dt>
+        <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>资金划入</label></dd>
+        <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>资金划出</label></dd>
+      </dl>
+      <dl>
+        <dt><input type="checkbox" name="checkbox" value="checkbox" /><label>会计记账</label></dt>
+        <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>会计记账（查看交易记录、导出成交明细、交易记录账）</label></dd>
+        <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>会计对账（查看对账单、日终对账）</label></dd>
+      </dl>
+      <dl>
+        <dt><input type="checkbox" name="checkbox" value="checkbox" /><label>定制条件设置</label></dt>
+        <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>增加定制条件</label></dd>
+        <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>修改定制条件</label></dd>
+        <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>删除定制条件</label></dd>
+        <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>建立定制交易组</label></dd>
+        <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>开通自动交易</label></dd>
+      </dl>
+      <dl>
+        <dt><input type="checkbox" name="checkbox" value="checkbox" /><label>新闻公告</label></dt>
+        <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>添加</label></dd>
+        <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>删除</label></dd>
+        <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>修改</label></dd>
+      </dl>
+      <dl>
+        <dt><input type="checkbox" name="checkbox" value="checkbox" /><label>日志查看</label></dt>
+      </dl>
+      <dl>
+       <dt><input type="checkbox" name="checkbox" value="checkbox" /><label>发布票据审核</label></dt>
+     </dl>
+     <dl >
+       <dt><input type="checkbox" name="checkbox" value="checkbox" /><label>发布询价审核</label></dt>
+       <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>发布询价卖出信息审核</label></dd>
+       <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>修改询价卖出信息审核</label></dd>
+       <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>删除询价卖出信息审核</label></dd>
+       <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>发布询价买入信息审核（银行可导入授信名单、授信额度）</label></dd>
+       <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>修改询价买入信息审核</label></dd>
+       <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>删除询价买入信息审核</label></dd>
+     </dl>
+     <dl>
+       <dt><input type="checkbox" name="checkbox" value="checkbox" /><label>发布报价审核</label></dt>
+       <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>发布报价买入信息审核</label></dd>
+       <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>修改询价卖出信息审核</label></dd>
+       <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>删除询价卖出信息审核</label></dd>
+       <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>发布询价买入信息审核</label></dd>
+       <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>修改询价买入信息审核</label></dd>
+       <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>删除询价买入信息审核</label></dd>
+     </dl>
+     <dl>
+       <dt><input type="checkbox" name="checkbox" value="checkbox" /><label>成交确认审核</label></dt>
+     </dl>
+     <dl>
+       <dt><input type="checkbox" name="checkbox" value="checkbox" /><label>资金管理审核</label></dt>
+       <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>资金划出审核</label></dd>
+     </dl>
+     <dl>
+       <dt><input type="checkbox" name="checkbox" value="checkbox" /><label>会计记账审核</label></dt>
+       <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>会计记账审核（查看交易记录、导出成交明细、交易记录账）</label></dd>
+       <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>会计对账审核（查看对账单、日终对账）</label></dd>
+     </dl>
+     <dl>
+       <dt><input type="checkbox" name="checkbox" value="checkbox" /><label>定制条件设置审核</label></dt>
+       <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>增加定制条件审核</label></dd>
+       <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>修改定制条件审核</label></dd>
+       <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>删除定制条件审核</label></dd>
+       <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>建立定制交易组审核</label></dd>
+       <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>开通自动交易审核</label></dd>
+     </dl>
+     <dl>
+       <dt><input type="checkbox" name="checkbox" value="checkbox" /><label>新闻公告审核</label></dt>
+       <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>添加审核</label></dd>
+       <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>删除审核</label></dd>
+       <dd><input type="checkbox" name="checkbox" value="checkbox" /><label>修改审核</label></dd>
+     </dl>
+   </div>
+
+ </div>
+ <!--选项区域结束-->
+ <!--用户组描述开始-->
+ <div class="user-group-describe">
+  <label for="">用户组描述:</label>
+  <input name="" id="">
+</input>
+</div>
+<!--用户组描述结束-->
+</div>
+
+<!-- 选项主体内容结束 -->
+<script>
+  window.onload=function(){
+      function $id(id){
+          return document.getElementById(id);
+      }
+    var addUserGroup=document.getElementById("add-user-group");
+    var chooseArea=document.getElementById("choose-area");
+    var userGroupMan=document.getElementById("user-group-manage");
+    var cancel=document.getElementById("cancel");
+    addUserGroup.onclick=function(){
+      userGroupMan.style.display="none";
+      chooseArea.style.display="block";
+    }
+    cancel.onclick=function(){
+     userGroupMan.style.display="block";
+     chooseArea.style.display="none";
+   }
+        //多选框联级切换
+        var dl=document.getElementsByTagName('dl');
+        for(var i=0;i<dl.length;i++){
+          var firstInput=dl[i].getElementsByTagName('input')[0];
+          firstInput.onclick=function(){
+            var dl=document.getElementsByTagName('dl');
+            for(var i=0;i<dl.length;i++){
+              var inputs = dl[i].getElementsByTagName('input');
+              if (inputs[0].value == this.value) {
+                for (var j=0;j<inputs.length;j++) {
+                  inputs[j].checked = inputs[0].checked;
+                }
+              }
+            }
+          }
+        }
+        //用户组移入显示全部信息
+        var descripe=document.getElementsByClassName("table-describe");
+        for(var i=0;i<descripe.length;i++){
+          descripe[i].onmouseover=function(){
+            var detail=document.createElement("div");
+            detail.innerHTML=this.innerHTML;
+            detail.style.color="#649ee7";
+            detail.style.position="absolute";
+            detail.style.backgroundColor="#d8d9b3";
+             detail.style.borderRadius="10px";
+              detail.style.zIndex="10";
+              detail.style.whiteSpace="normal"
+              detail.style.wordBreak="break-all";
+             detail.style.left="50px";
+             detail.style.lineHeight="25px";
+              detail.style.maxWidth="300px"
+            this.appendChild(detail);
+            this.onmouseout=function(){
+              this.removeChild(detail);
+            }
+          }
+        }
+      //单击审核状态弹出审核框
+      var check=document.getElementsByClassName("wait-audit");
+      var checkWindow= document.getElementById("check-user-window");
+      for(var i=0;i<check.length;i++){
+          check[i].onclick=function(){
+              //获取td中的值，导入弹出框中
+              var thisParentNode=this.parentNode.parentNode;
+              var thisTd=thisParentNode.getElementsByTagName('td');
+              $id('user-group-name').value=thisTd[0].innerHTML;
+              $id("user-group-describe").value=thisTd[1].innerHTML;
+              $id("user-group-limits").value=thisTd[2].innerHTML;
+              $id("creat-time").value=thisTd[3].innerHTML;
+              checkWindow.style.display="block";
+              var checkConfirm=document.getElementById("check-user-btn");
+              var checkBtn=checkConfirm.getElementsByTagName("input");
+              var that=this;
+              checkBtn[0].onclick=function(){
+                  checkWindow.style.display="none";
+                  that.style.backgroundColor="#ab661c";
+                  that.className="unable-audit";
+                  that.value="未通过";
+                  that.disabled=true;
+              }
+              checkBtn[1].onclick=function(){
+                  checkWindow.style.display="none";
+                  that.style.backgroundColor="#476ea1";
+                  that.className="pass-audit";
+                  that.value="已审核";
+                  that.disabled=true;
+              }
+          }
+      }
+      }
+    </script>
+  </body>
+  </html>

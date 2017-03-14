@@ -1,0 +1,82 @@
+body { background: #1a2d44;width: 100% }
+.register, .login { background: #fff; width: 690px; padding: 30px 26px 25px; margin:140px auto;}
+.register .logo { margin-bottom: 20px; text-align: center; }
+.register .logo img{ width: 364px;  margin: 25px 0;  height: 154px;}
+.login .sum {margin-right: 258px}
+.login #infor{text-align: right}
+.register #infor p, .register #infor p.password {margin-left: 210px;}
+.login #infor #aa{width: 20px;}
+.register #infor #protocol,
+.register #infor #protocol1{width: 20px;}
+.register #infor .accoun2{position: relative;
+	top: -14px;
+	left: 5px;
+	margin-right: 64px;}
+.login #infor .sum{margin-left:237px;}
+.login #infor .sum input{background: #3279a3;}
+.login #infor .accoun2{
+	margin-right: 213px;
+	position: relative;
+	left: 9px;
+	top: -12px;
+}
+.register #infor p.code { margin-left: 309px; }
+#infor p, #infor li { color: #606060; font-size: 14px; }
+#infor p.code, #infor li.code { margin-right: 15px; }
+#infor p.password { margin: 15px 0; }
+#infor ul li select { margin-right:195px;}
+#infor ul li span { display: inline-block; *display: inline; *zoom: 1; }
+#infor p input, #infor li select, #infor li input, #infor li select option {
+	width: 168px;
+	height: 35px;
+	border: 1px solid #a4a4a4;
+	border-radius: 6px;
+	font-size: 16px;
+	outline: none;
+	margin-left: 10px;
+}
+#infor p.sum input, .sum input {
+	background: #3279a3;
+	padding-left: 0;
+	width: 130px;
+	height: 36px;
+	border-radius: 6px;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	color: #fff;
+	margin-bottom: 25px;
+	margin-left: 67px;
+}
+.find #infor p.sum input{margin-right: 245px;margin-top: 20px;  }
+#choose .account {position: relative;margin-left: 413px;}
+#choose .account1 { margin-left: 144px; position: relative; }
+#choose .account1 a, #choose .account a { position: absolute; top: 3px; left: 2px; width: 26px; height: 26px; border-radius: 3px; border: 1px solid #3279a3; cursor: pointer; }
+#condition { font-size: 0;text-align: center }
+#condition input { width: 109px;
+	height: 35px;
+	margin-top: 45px;
+	cursor: pointer;
+	border-radius: 6px;
+	background: #4f8fb5;
+	font-size: 18px;
+	color: #fff;
+	margin-left: 22px;}
+
+
+/**/#infor ul li {margin-top:18px; }
+.login-tit { font-size: 28px; color: #0d0d0d; margin-bottom: 30px; text-align: center; }
+p.protocol {margin-top: 23px;margin-left: 720px;color: #1f1f1f;}
+
+/**/
+.find { text-align: center; background: #fff; width: 690px; padding: 29px 26px 25px; margin: 140px auto;}
+.find ul{text-align: right}
+.protocol i {font-size: 30px;vertical-align: middle;margin-right: 10px;cursor: pointer;color: #3279a3;}
+.accoun { cursor: pointer; }
+
+/**/
+.phone, .phone1, .phone2 { position: relative; }
+#infor #security, #infor #security1, #infor #security2 { position: absolute; background: transparent; cursor: pointer; border: none; color: #4b94ff; font-size: 20px; width: 120px; padding: 0; }
+#infor #security { right: 383px; }
+#infor #security1 {right: 195px;}
+#infor #security2 {right: 187px;}

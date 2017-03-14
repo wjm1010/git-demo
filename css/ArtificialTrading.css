@@ -1,0 +1,710 @@
+body, html {
+  background: #050b0b;
+  width: 100%;
+  min-width: 1200px;
+}
+
+.artificial-content {
+  width: 100%;
+}
+.artificial-content .sev-name li {
+  height: 97px;
+  text-align: center;
+  color: #bbb8b1;
+  margin: 2px 0;
+  font-size: 16px;
+  width: 36px;
+  padding: 0 10px;
+  background: #1d2c3e;
+}
+.artificial-content .sev-name .act {
+  background: #1c4e89;
+}
+.artificial-content .main1 .transaction-name, .transaction-name1 {
+  color: #fff;
+  margin-top: 27px;
+  margin-left: 15px;
+  border-bottom: 2px solid #1c4e8a;
+}
+.artificial-content .main1 .transaction-name li, .transaction-name1 li {
+  width: 80px;
+  height: 40px;
+  background: #1d2c3e;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  margin-right: 3px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+.artificial-content .transaction-name li.act, .transaction-name1 li.act {
+  background: #1c4e8a;
+}
+.artificial-content .main1 {
+  width: 100%;
+}
+.artificial-content .main1 .Part-One {
+  border: 2px solid #272a27;
+  border-right: 0;
+  width: 100%;
+  border-top: 0;
+  padding: 16px 0px 16px 15px;
+}
+.artificial-content .Part-One .producttype {
+  margin-bottom: 15px;
+}
+
+.artificial-content .dealClose .Part-One .date input.time{
+    width: 140px;
+    height: 23px;
+    margin-right: 10px;
+    background: #202e3e;
+    border: 1px solid #659fe9;
+}
+.artificial-content .dealClose .Part-One .date input.all{
+    margin-right: 10px;
+    background: #202e3f;
+    width: 40px;
+    height: 25px
+}
+.artificial-content .dealClose .Part-One .date input.excel{
+   width: 113px;
+    height: 30px;
+    background: #1c4e89;
+    margin-left: 157px;
+    border-radius: 3px;
+}
+.artificial-content .dealClose .Part-One .date input.search{
+    width: 203px;
+    height: 23px;
+    background: #202e3e;
+    border: 1px solid #659fe9;
+    margin-left: 67px;
+}
+.bill_condition .amount i {
+  width: 20px;
+  border: 1px solid #424439;
+  margin: 4px 6px;
+  display: inline-block;
+  *
+  display: inline;
+  *
+  zoom: 1;
+}
+.artificial-content .dealClose .Part-One .date i{
+    width: 40px;
+    border-bottom: 2px solid #666756;
+    display: inline-block;
+    margin-right:10px;
+    vertical-align: super;
+}
+.artificial-content .Part-One .producttype .inbtn {
+  margin-right: 57px;
+}
+.artificial-content .Part-Two{
+  width: 100%;
+  border-left: 2px solid #272a27;
+}
+.artificial-content .Part-Two th {
+  color: #c9caa6;
+  font-size: 16px;
+  height: 55px;
+  text-align: center;
+  line-height: 55px;
+}
+.artificial-content .Part-Two tr {
+  height: 50px;
+  text-align: center;
+}
+.artificial-content .Part-Two tbody tr:nth-child(odd) {
+  background: #202221;
+}
+.artificial-content .Part-Two tbody tr td i {
+  font-size: 25px;
+  cursor: pointer;
+  color: #4671a6;
+}
+.InDialogueStore .Part-One .bill p, .dealClose .Part-One .producttype .bill .l {
+  margin-left: 60px;
+}
+.InDialogueStore .Part-Two {
+}
+.dealClose .Part-One .acceptor {
+  margin-bottom: 15px;
+}
+.dealClose .Part-One .deadline {
+  margin-right: 415px;
+}
+
+/*ÃƒÆ’Ã‚Â¨Ãƒâ€šÃ‚Â¡Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã‚Â¥ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦*/
+.specifiedbuy .Part-One .price {
+  margin: 15px 0;
+}
+.specifiedbuy .Part-One .price input {
+  margin-right: 60px;
+}
+.specifiedsell .bill label {
+  margin-left: 60px;
+}
+.specifiedsell .Part-Two {
+  border-left: 2px solid #272a27;
+}
+.specifiedsell .Part-Two table {
+  border-left: none;
+}
+.specifiedsell .Part-Two .choose {
+  padding-top: 20px;
+  padding-left: 450px;
+}
+.specifiedsell .Part-Two .number {
+  width: 25px;
+  height: 25px;
+  background: #ddd;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+}
+.specifiedsell .Part-Two .border {
+  border-bottom: 1px solid #656665;
+  width: 82px;
+  margin: 10px;
+}
+.specifiedsell .Part-Two .price,
+.specifiedbuy .Part-One form .submit,
+.Inquirybuy .Part-One form .submit {
+  text-align: center;
+}
+.artificial-content .Part-One .district{
+  position: relative;
+}
+.artificial-content .Part-One .info{
+  position: absolute;
+  top: 30px;
+  left: -84px;
+  width: 243px;
+}
+.specifiedsell .Part-Two .price input,
+.specifiedbuy .Part-One form .submit input,
+.Inquirybuy .Part-One form .submit input {
+  width: 200px;
+  height: 33px;
+  background: #1c4e89;
+  font-size: 14px;
+  cursor: pointer;
+  color: #c2c09f;
+  margin-top: 40px;
+  border-radius: 4px;
+}
+.specifiedbuy .district {
+  margin-right: 60px;
+}
+.specifiedbuy .Part-Two, .Inquirybuy .Part-Two, .Inquirysell .Part-Three {
+  height: 300px;
+  border-left: 2px solid #272a27;
+}
+.specifiedbuy .trend, .Inquirybuy  .trend, .Inquirysell .trend {
+  line-height: 44px;
+  padding-left: 15px;
+  border-bottom: 2px solid #272a27;
+}
+.Inquirysell .trend{
+    border-top: 2px solid #272a27;
+}
+.Inquirybuy .Part-One .acceptor, .Inquirybuy .Part-One .acceptor {
+  margin: 15px 0;
+}
+.Inquirysell form {
+  margin-top: 15px;
+}
+.Inquirysell form select {
+  width: 125px;
+  height: 29px;
+  background: #1a2d44;
+  border: 1px solid #395c88;
+  margin-right: 60px;
+}
+.Inquirysell form #cx {
+  background: #1a2d44;
+  width: 65px;
+  height: 28px;
+
+}
+
+.Inquirysell .Part-Three {
+}
+.Inquirysell .Part-Three .chart {
+  width: 65%;
+  padding: 20px;
+  border-right: 2px solid #272a27;
+  height: 450px;
+}
+.Inquirysell .Part-Three .price {
+  text-align: center;
+  padding: 70px 0 0 130px;
+}
+.Inquirysell .Part-Three .price p {
+  margin-bottom: 40px;
+}
+.Inquirysell .Part-Three .price p input {
+  width: 160px;
+}
+.Inquirysell .Part-Three .price p.submit input {
+  width: 200px;
+  height: 33px;
+  background: #1c4e89;
+  color: #c9caa6;
+}
+
+/*dhfjskgfdhkjghfjdkfsbhvgkjdf*/
+.brm {
+}
+.brm-title {
+  line-height: 68px;
+  padding-left: 15px;
+  font-size: 20px;
+  color: #c2baaf;
+}
+.brm-content {
+  border-top: 2px solid #272a27;
+  border-left: 2px solid #272a27;
+  padding-left: 170px;
+  padding-top: 70px;
+  font-size: 16px;
+  color: #c2baaf;
+}
+.brm-content ul {
+}
+.brm-content ul.list {
+  margin-left: -386px;
+}
+.brm-content ul li {
+  margin-bottom: 50px;
+}
+.brm-content ul li input {
+  width: 114px;
+  height: 38px;
+  border-radius: 4px;
+  margin-right: 31px;
+  background: #666666;
+}
+.brm-content ul li span.distance {
+  margin-right: 130px;
+}
+.brm-content ul li span.price {
+  color: #fa8003;
+  font-size: 20px;
+}
+.brm-content .audit {
+  text-align: center;
+}
+.brm-content .audit p {
+}
+.brm-content .audit p input {
+  width: 114px;
+  height: 38px;
+  border-radius: 4px;
+  margin-right: 156px;
+  background: #3381bc;
+  font-weight: bold;
+}
+.brm-content .veto {
+  width: 702px;
+  height: 246px;
+  border: 1px solid #6d6f72;
+  background: #1a2d44;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -352px;
+  margin-top: -124px;
+}
+.brm-content .veto p {
+}
+.brm-content .veto p.close {
+  font-size: 32px;
+  color: #FFD;
+  margin-left: 655px;
+}
+.brm-content .veto p textarea {
+  resize: none;
+  width: 586px;
+  height: 125px;
+  background: #1a385d;
+  vertical-align: text-top;
+  font-size: 16px;
+  color: #fff;
+}
+.brm-content .veto p input {
+  background: #3179b1;
+  margin-top: 20px;
+  width: 163px;
+  height: 34px;
+  font-size: 16px;
+}
+.brm-content .agree {
+  width: 550px;
+  height: 230px;
+  border: 1px solid #ddd;
+  background: #1a2d44;
+  text-align: center;
+  padding-top: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -116px;
+  margin-left: -225px;
+}
+.brm-content .agree p {
+  margin-bottom: 37px;
+}
+.brm-content .agree p input#abolish {
+  width: 120px;
+  height: 37px;
+  background: #666666;
+  color: #333;
+  font-size: 16px;
+  margin-right: 127px;
+}
+.brm-content .agree p input#determine {
+  width: 120px;
+  height: 37px;
+  background: #3179b1;
+  color: #333;
+  font-size: 16px;
+}
+
+/*第9*/
+.artificial-content .Part-One .publish input{
+    width: 80px;
+    height: 27px;
+    background: #66a6f2;
+    margin-right: 611px;
+    border-radius: 2px;
+    margin-top: -10px;
+}
+.artificial-content .product_details{
+    border-top: 2px solid #272a27;
+    border-left: 2px solid #272a27;
+    color: #4671a6;
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+.artificial-content .product_details ul{
+  width: 100%;
+  padding-bottom: 38px;
+}
+.artificial-content .product_details ul li{
+  width: 20%;
+}
+.artificial-content .product_details #image{
+  width: 80px;
+  height: 25px;
+  background: #67a4f1;
+  font-size: 16px;
+  cursor: pointer;
+  color: #192839;
+  border-radius: 3px;
+   margin-left: 109%;
+}
+.artificial-content .pub{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 698px;
+  height: 198px;
+  border:1px solid #6d6f72;
+  background: #1a2d44;
+  margin-left: -350px;
+  margin-top: -100px;
+}
+.artificial-content .pub .back{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    background: #962730;
+    cursor: pointer;
+}
+.artificial-content .pub .lish{
+    text-align: center;
+    color: #c9caa6;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+.artificial-content .pub input{
+    width: 112px;
+    height: 37px;
+    background: #68a5ef;
+    color: #121d29;
+    font-size: 16px;
+    margin-left: 90px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.specifics{
+    cursor: pointer;
+}
+.paper_tickets,
+.tele_tickets,
+.particulars,
+.tele_tickets1
+{
+    border: 1px solid #6d6f72;
+    background: #1a2d44;
+    width: 742px;
+    height: 540px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left:-371px;
+    margin-top: -280px;
+}
+.particulars{
+    display: none;
+}
+.paper_tickets form,
+.tele_tickets form,
+.tele_tickets1 form{
+  color: #c9caa6;
+  font-size: 16px;
+}
+.paper_tickets form ul,
+.tele_tickets form ul,
+.tele_tickets1 form ul{
+  text-align: right;
+  margin-left: 40px;
+}
+.paper_tickets form ul li,
+.tele_tickets form ul li,
+.particulars .content ul li,
+.tele_tickets1 form ul li{
+  margin-bottom: 20px;
+  color: #c9caa6;
+  font-size: 16px;
+}
+.particulars .content ul{
+    width:33.33%;
+    text-align: center;
+}
+.particulars .content ul li{
+    color: #999;
+}
+.paper_tickets form ul li input,
+.tele_tickets form ul li input,
+.tele_tickets1 form ul li input,
+.paper_tickets form ul li select,
+.tele_tickets form ul li select,
+.tele_tickets1 form ul li select{
+  width: 140px;
+  height: 28px;
+  background: #1a385d;
+  outline: none;
+  border:1px solid #395c88;
+  color: #e8e5bd;
+  font-size: 16px;
+}
+.paper_tickets form ul li input.positive,
+.tele_tickets form ul li input.positive,
+.tele_tickets1 form ul li input.positive{
+    position: absolute;
+    left: 87px;
+    top: 2px;
+}
+.paper_tickets form ul li input.positive1,
+.tele_tickets form ul li input.positive1,
+.tele_tickets1 form ul li input.positive1{
+    position: absolute;
+    right: -2px;
+    top: 2px;
+}
+.paper_tickets form p.back,
+.tele_tickets form p.back,
+.particulars .back,
+.tele_tickets1 form p.back{
+  text-align: right;
+      font-size: 20px;
+    color: #fff;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.paper_tickets form p.title,
+.tele_tickets form p.title,
+.particulars .title,
+.tele_tickets1 form p.title{
+  text-align: center;
+  color: #c9caa6;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.paper_tickets form p.remark,
+.tele_tickets form p.remark,
+.tele_tickets1 form p.remark{
+  margin-left: 76px;
+}
+.paper_tickets form p textarea,
+.tele_tickets form p textarea,
+.tele_tickets1 form p textarea{
+  width: 513px;
+  height: 55px;
+  background: #1a385d;
+  outline: none;
+  border:1px solid #395c88;
+  resize:none;
+  vertical-align: text-top;
+}
+.paper_tickets form p.submit,
+.tele_tickets form p.submit,
+.tele_tickets1 form p.submit{
+  text-align: center;
+}
+.paper_tickets form p.submit input,
+.tele_tickets form p.submit input,
+.tele_tickets1 form p.submit input{
+  width: 220px;
+  height:35px;
+  background: #3179b1;
+  font-size: 14px;
+  margin-top: 27px;
+  border-radius: 3px;
+}
+.particulars  .audit{
+    text-align: center;
+}
+.particulars  .audit input{
+    width: 150px;
+    height:35px;
+    margin-right: 10px;
+    background: #3179b1;
+    font-size: 14px;
+    margin-top: 90px;
+    border-radius: 3px;
+}
+.paper_tickets form ul:nth-of-type(2),
+.tele_tickets form ul:nth-of-type(2),
+.tele_tickets1 form ul:nth-of-type(2){
+  margin-left: 154px;
+}
+/*选择文件*/
+.paper_tickets form .list,
+.tele_tickets form .list,
+.tele_tickets1 form .list{
+  position: relative;
+      margin-left: 40px;
+    margin-bottom: 20px;
+}
+.paper_tickets form .list label.side,
+.tele_tickets form .list label.side,
+.tele_tickets1 form .list label.side{
+  margin-left: 88px;
+}
+.paper_tickets form  .choose,
+.tele_tickets form  .choose,
+.tele_tickets1 form  .choose{
+  padding-left: 140px;
+        width: 200px;
+    height: 28px;
+    background: #1a385d;
+    outline: none;
+    border: 1px solid #395c88;
+    color: #0646fc;
+}
+.paper_tickets form #choose,
+.tele_tickets form #choose,
+.tele_tickets1 form #choose{
+      width: 60px;
+    position: absolute;
+    top: 0px;
+    left: 224px;
+    opacity: 0;
+}
+.paper_tickets form #choose1,
+.tele_tickets form #choose1,
+.tele_tickets1 form #choose1{
+    width: 60px;
+    position: absolute;
+    top: 0px;
+    left: 601px;
+    opacity: 0;
+}
+/*删除部分*/
+#delate{
+  width: 698px;
+  height:288px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -350px;
+  margin-top: -145px;
+  border: 1px solid #6d6f72;
+  background: #1a2d44;
+}
+#delate p:nth-of-type(2){
+  margin-left: 20px;
+}
+#delate .back{
+  text-align: right;
+  margin-right: 10px;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+#delate .remark{
+  margin:30px 0 20px 20px;
+
+}
+#delate .verify{
+  margin-bottom: 28px;
+}
+#delate .verify input:nth-of-type(1){
+  color: #3a3a3a;
+  background: #666666;
+}
+#delate .verify input:nth-of-type(2){
+  color: #03090e;
+  background: #3179b1;
+}
+#delate .verify input{
+  width: 114px;
+  height: 35px;
+  border-radius: 3px;
+  margin-left: 170px;
+  cursor: pointer;
+}
+#delate .remark textarea{
+    width: 590px;
+    height: 100px;
+    background: #1a385d;
+    outline: none;
+    border: 1px solid #395c88;
+    resize: none;
+    vertical-align: text-top;
+}
+.artificial-content .Part-Two tbody tr:hover{background: #1a2d44}
+
+
+/*票据交易*/
+.Inquirybuy .Part-table{
+    width: 100%;
+    border-left: 2px solid #272a27;
+    display: none;
+    height: 350px;
+    overflow: auto;
+}
+.Inquirybuy .Part-table th {
+    color: #c9caa6;
+    font-size: 16px;
+    height: 55px;
+    text-align: center;
+    line-height: 55px;
+}
+.Inquirybuy .Part-table tr{
+    height: 50px;
+    text-align: center;
+}
+.Inquirybuy .Part-table tbody tr:nth-child(odd) {
+    background: #202221;
+}
