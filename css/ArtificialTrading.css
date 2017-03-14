@@ -1,7 +1,7 @@
 body, html {
-  background: #050b0b;
+  background: red;
   width: 100%;
-  min-width: 1200px;
+/*   min-width: 1200px; */
 }
 
 .artificial-content {
